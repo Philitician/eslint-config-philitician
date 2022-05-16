@@ -1,8 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    node: true,
     es6: true,
+    node: true,
     jest: true,
   },
   extends: [
@@ -20,8 +20,10 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 'latest',
+    // ecmaVersion: 'latest',
+    ecmaVersion: 13,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
