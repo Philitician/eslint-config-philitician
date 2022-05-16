@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-philitician",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Philitician/eslint-config-philitician.git"
+  },
+  "keywords": [],
+  "author": "Philip Rene Rothschild",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Philitician/eslint-config-philitician/issues"
+  },
+  "homepage": "https://github.com/Philitician/eslint-config-philitician#readme",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2"
+  }
+}
