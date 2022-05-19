@@ -78,14 +78,20 @@ Add your custom ESLint or Prettier rules directly in `.eslintrc` or `package.jso
 3. Edit VSCode settings by pressing CMD + SHIFT + P on Mac (or Ctrl + SHIFT + P on Windows), type `settings` and choose `Preferences: Open Settings (JSON)`. Edit or add the following settings:
 
 ```json
-// Format a file on save
-"editor.formatOnSave": true,
 // show eslint icon at bottom toolbar
 "eslint.alwaysShowStatus": true,
-// turns on Auto Fix for all providers including ESLint
+// turns on Auto Fix for all providers including ESLint, and organizes imports on save
 "editor.codeActionsOnSave": {
+  "source.organizeImports": true,
   "source.fixAll": true
-}
+},
+// specify what files to validate
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact",
+],
 ```
 
 Remove `"editor.defaultFormatter": "esbenp.prettier-vscode"` line if you had it before.
